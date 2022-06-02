@@ -11,16 +11,16 @@
     
     <div id="slider">
         <figure>
-            <img src="/images/woman_beach.png" alt>
-            <img src="/images/mountains.png" alt>
-            <img src="/images/vacation_beach.png" alt>
-            <img src="/images/egypt.png" alt>
-            <img src="/images/woman_beach.png" alt>
+            <img src="images/woman_beach.png" alt>
+            <img src="images/mountains.png" alt>
+            <img src="images/vacation_beach.png" alt>
+            <img src="images/egypt.png" alt>
+            <img src="images/woman_beach.png" alt>
         </figure>
     </div>
 
     <header>
-        <img class="logo1" src="/images/logo_blue.png">
+        <img class="logo1" src="images/logo_blue.png">
         <div class="header_row">
 
         </div>
