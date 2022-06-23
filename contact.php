@@ -36,7 +36,7 @@
       </div>
     </nav>
 
-    <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('images/woman_beach.png');" data-stellar-background-ratio="0.5" id="section-home">
+    <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('images/img_1.png');" data-stellar-background-ratio="0.5" id="section-home">
       <div class="overlay"></div>
       <div class="container">
         <div class="row align-items-center text-center">

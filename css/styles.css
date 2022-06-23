@@ -84,7 +84,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 7em 0; }
+  padding: 5em 0; }
   .probootstrap-cover .overlay {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -141,6 +141,7 @@ a {
   top: 0;
   left: 0;
   z-index: 1000;
+  height: 5em;
   width: 100%; }
   @media (max-width: 991px) {
     .probootstrap_navbar {

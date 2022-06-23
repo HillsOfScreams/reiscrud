@@ -6,7 +6,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    background-image: url("/images/vacation_beach.png");
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/bg_1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .login {
     width: 400px;
