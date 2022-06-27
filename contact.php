@@ -53,7 +53,7 @@
         
         <div class="row">
           <div class="col-md-6 probootstrap-animate">
-            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni veniam repellat eligendi quisquam harum.</p>
+            <p class="mb-5">Here you can contact us if you have any questions or problems when trying to book your vacation.</p>
             <div class="row">
               <div class="col-md-6">
                 <ul class="probootstrap-contact-details">
