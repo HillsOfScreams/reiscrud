@@ -23,7 +23,6 @@
             $postalcode = $_POST['postalcode'];
             $housenumber = $_POST['housenumber'];
             $city = $_POST['city'];
-            $customer_phone = $_POST['city'];
             $customer_email = $_POST['customer_email'];
             $username = $_POST['username'];
             $pwd = $_POST['pwd'];

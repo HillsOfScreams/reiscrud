@@ -20,7 +20,7 @@ if ($stmt = $con->prepare('SELECT customer_ID, username FROM login WHERE usernam
         session_start();
         $_SESSION['customer_ID'] = $customer_ID;
         $_SESSION['username'] = $username;
-        //header("Location: "); <------------ LOCATIE DUURSTUREN!!!
+        header("Location: booking.php"); // <------------ LOCATIE DUURSTUREN!!!
     } else {
         // Incorrect username
         echo 'Incorrect username and/or password!';

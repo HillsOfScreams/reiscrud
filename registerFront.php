@@ -114,16 +114,15 @@
 </td>
 </tr>
 <tr>
+</form>
 <td colspan="2" align="center">
-<input type="submit" value="Submit">
+  <form method="post" action="loginFront.php">
+    <input type="submit"/>
+  </form>
 </td>
 </tr>
+</table>
 
-
-
-
-  </table>
-</form>
  
 </body>
 </html>
