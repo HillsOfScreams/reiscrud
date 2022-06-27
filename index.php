@@ -150,7 +150,7 @@
           <div class="col-md-12 text-center mb-5 probootstrap-animate">
             <h2 class="display-4 border-bottom probootstrap-section-heading">About Travelex</h2>
             <blockquote class="">
-              <p class="lead mb-4"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque eveniet, veniam alias deserunt reprehenderit inventore ullam exercitationem at! Porro sequi distinctio et hic eos saepe corrupti, incidunt doloribus magni! Unde doloribus, doloremque nesciunt perferendis accusamus officiis odit ut repellendus quia eligendi earum praesentium illo autem dolores neque numquam.</em></p>
+              <p class="lead mb-4"><em>Welcome to Travelex! Here at Travelex travel agency, we make sure you have the best information and possibilities for vacations, for the cheapest prices possible!</em></p>
             </blockquote>
 
           </div>
@@ -165,7 +165,7 @@
       <div class="container">
         <div class="row text-center mb-5 probootstrap-animate">
           <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Top Places Around The World</h2>
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Vacation Destinations</h2>
           </div>
         </div>
         <div class="row">
