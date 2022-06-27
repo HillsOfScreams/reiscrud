@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/logo_small.png">
     <title>Reisbureau Travelex</title>
+
 	</head>
 	<body>
+
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
       <div class="container">
         <img class="logo1" href="index.php" src="images/logo.png">
@@ -34,18 +36,18 @@
         </div>
       </div>
     </nav>
-    
-    <div id="slider">
-      <figure>
-          <img src="images/woman_beach.png" alt>
-          <img src="images/mountains.png" alt>
-          <img src="images/vacation_beach.png" alt>
-          <img src="images/egypt.png" alt>
-          <img src="images/woman_beach.png" alt>
-      </figure>
-    </div>
-    <section class="probootstrap-cover overflow-hidden relative" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5" id="section-home">
-      <div class="overlay"></div>
+
+    <section class="probootstrap-cover overflow-hidden relative" style="background-image: url('images/bg_1.png');" data-stellar-background-ratio="0.5" id="section-home">
+      <div id="slider">
+        <figure>
+            <img src="images/img_1.png" alt>
+            <img src="images/img_2.png" alt>
+            <img src="images/img_3.png" alt>
+            <img src="images/img_4.png" alt>
+            <img src="images/img_1.png" alt>
+        </figure>
+      </div>
+      
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md">
@@ -53,18 +55,6 @@
             <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Log in to book your vacation!</h2>
             <p class="lead mb-5 probootstrap-animate"></p>
           </div> 
-          <div class="col-md probootstrap-animate">
-            <form action="#" class="probootstrap-form">
-              <div class="form-group">
-                
-                <div class="row">
-                  <div class="col-md">
-                    <input type="login" value="Login" class="btn btn-primary btn-block" href = "login.php">
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
           <!-- <div class="col-md probootstrap-animate">
@@ -74,6 +64,7 @@
                   <div class="col-md">
                     <div class="form-group">
                       <label for="id_label_single">From</label>
+
                       <label for="id_label_single" style="width: 100%;">
                         <select class="js-example-basic-single js-states form-control" id="id_label_single" style="width: 100%;">
                           <option value="Australia">Australia</option>
@@ -89,6 +80,8 @@
                           <option value="Chile">Zimbabwe</option>
                         </select>
                       </label> 
+
+
                     </div>
                   </div>
                   <div class="col-md">
@@ -150,59 +143,65 @@
     </section>
     
     
+
     <section class="probootstrap_section" id="section-feature-testimonial">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-12 text-center mb-5 probootstrap-animate">
             <h2 class="display-4 border-bottom probootstrap-section-heading">About Travelex</h2>
             <blockquote class="">
-              <p class="lead mb-4"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque eveniet, veniam alias deserunt reprehenderit inventore ullam exercitationem at! Porro sequi distinctio et hic eos saepe corrupti, incidunt doloribus magni! Unde doloribus, doloremque nesciunt perferendis accusamus officiis odit ut repellendus quia eligendi earum praesentium illo autem dolores neque numquam.</em></p>
+              <p class="lead mb-4"><em>Welcome to Travelex! Here at Travelex travel agency, we make sure you have the best information and possibilities for vacations, for the cheapest prices possible!</em></p>
             </blockquote>
+
           </div>
         </div>
         
       </div>
     </section>
    
+
+
     <section class="probootstrap_section" id="section-city-guides">
       <div class="container">
         <div class="row text-center mb-5 probootstrap-animate">
           <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Top Places Around The World</h2>
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Vacation Destinations</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
             <a href="#" class="probootstrap-thumbnail">
-              <img src="images/img_1.jpg" alt="Free Template by uicookies.com" class="img-fluid">
+              <img src="images/italy.png" alt="" class="img-fluid">
               <div class="probootstrap-text">
-                <h3>Buena</h3>
+                <h3>Italy</h3>
               </div>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
             <a href="#" class="probootstrap-thumbnail">
-              <img src="images/img_2.jpg" alt="Free Template by uicookies.com" class="img-fluid">
-              <h3>Road</h3>
+              <img src="images/hawaii.png" alt="" class="img-fluid">
+              <h3>Hawaii</h3>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
             <a href="#" class="probootstrap-thumbnail">
-              <img src="images/img_3.jpg" alt="Free Template by uicookies.com" class="img-fluid">
-              <h3>Australia</h3>
+              <img src="images/newzealand.png" alt="" class="img-fluid">
+              <h3>New Zealand</h3>
             </a>
           </div>
           <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
             <a href="#" class="probootstrap-thumbnail">
-              <img src="images/img_4.jpg" alt="Free Template by uicookies.com" class="img-fluid">
+              <img src="images/japan.png" alt="" class="img-fluid">
               <h3>Japan</h3>
             </a>
           </div>
         </div>
+        <p><a href="#" class="btn btn-primary">View More</a></p>
       </div>
     </section>
     
   
+
     <section class="probootstrap_section">
       <div class="container">
         <div class="row text-center mb-5 probootstrap-animate">
@@ -213,8 +212,9 @@
       </div>
     </section>
         
+
     <section class="probootstrap-section-half d-md-flex" id="section-about">
-      <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(images/img_2.jpg)"></div>
+      <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(images/img_5.png)"></div>
       <div class="probootstrap-text">
         <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">
           <h2 class="heading mb-4">Customer Service</h2>
@@ -224,8 +224,10 @@
         </div>
       </div>
     </section>
+
+
     <section class="probootstrap-section-half d-md-flex">
-      <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(images/img_3.jpg)"></div>
+      <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(images/img_6.png)"></div>
       <div class="probootstrap-text order-1">
         <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">
           <h2 class="heading mb-4">Payment Options</h2>
@@ -236,6 +238,8 @@
       </div>
     </section>
     
+
+
     <footer class="probootstrap_section probootstrap-border-top">
       <div class="container">
         <div class="row mb-5">
@@ -278,6 +282,7 @@
         </div>
       </div>
     </footer>
+
     
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

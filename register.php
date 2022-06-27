@@ -1,58 +1,58 @@
-<?php
-    include_once('includes/connect.php');
-    
-    // Now we check if the data from the login form was submitted, isset() will check if the data exists.
-    if ( !isset($_POST['username'], $_POST['pwd']) ) {
-        // Could not get the data that should have been sent.
-        exit('Please fill both the username and password fields!');
-    } else {
-        $stmt = $con->prepare('SELECT * FROM login WHERE username = :username');
-        $stmt->bindParam(':username', $_POST['username']);
-        $stmt->execute();
-        // Store the result so we can check if the account exists in the database.
-        $result = $stmt->fetch();
-        if ($result) {
-            // Incorrect username
-            echo 'Username already exists.';
-        } else {
-            $firstname = $_POST['firstname'];
-            $insertion = $_POST['insertion'];
-            $lastname = $_POST['lastname'];
-            $customer_phone = $_POST['customer_phone'];
-            $streetname = $_POST['streetname'];
-            $postalcode = $_POST['postalcode'];
-            $housenumber = $_POST['housenumber'];
-            $city = $_POST['city'];
-            $customer_email = $_POST['customer_email'];
-            $username = $_POST['username'];
-            $pwd = $_POST['pwd'];
-            
-            $sql = "INSERT INTO customer (customer_firstname, customer_insertion, customer_lastname) VALUES (:customer_firstname, :customer_insertion, :customer_lastname)";
-            $stmt = $con->prepare($sql);
-            $stmt->bindParam(':customer_firstname', $firstname);
-            $stmt->bindParam(':customer_insertion', $insertion);
-            $stmt->bindParam(':customer_lastname', $lastname);
-            $stmt->execute();
-
-            $customer_id = $con->lastInsertId();
-              
-            $sql = "INSERT INTO customer_na (customer_id, streetname, postalcode, housenumber, city, customer_phone, customer_email) VALUES (:customer_id, :streetname, :postalcode, :housenumber, :city, :customer_phone, :customer_email)";
-            $stmt = $con->prepare($sql);
-            $stmt->bindParam(':customer_id', $customer_id);
-            $stmt->bindParam(':streetname', $streetname);
-            $stmt->bindParam(':postalcode', $postalcode);
-            $stmt->bindParam(':housenumber', $housenumber);
-            $stmt->bindParam(':city', $city);
-            $stmt->bindParam(':customer_phone', $customer_phone);
-            $stmt->bindParam(':customer_email', $customer_email);
-            $stmt->execute();
-
-            $sql = "INSERT INTO login (customer_id, username, password) VALUES (:customer_id, :username, :password)";
-            $stmt = $con->prepare($sql);
-            $stmt->bindParam(':customer_id', $customer_id);
-            $stmt->bindParam(':username', $username);
-            $stmt->bindParam(':password', $pwd);
-            $stmt->execute();     
-        }
-    }
-?>
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Responsive Registration Form</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Password" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Re-type Password" required />
+          </div>
+          <div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Last Name" required />
+              </div>
+            </div>
+          </div>
+            	<div class="input_field radio_option">
+              <input type="radio" name="radiogroup1" id="rd1">
+              <label for="rd1">Male</label>
+              <input type="radio" name="radiogroup1" id="rd2">
+              <label for="rd2">Female</label>
+              </div>
+              <div class="input_field select_option">
+                <select>
+                  <option>Select a country</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                </select>
+                <div class="select_arrow"></div>
+              </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb1">
+    			<label for="cb1">I agree with terms and conditions</label>
+            </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb2">
+    			<label for="cb2">I want to receive the newsletter</label>
+            </div>
+          <input class="button" type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="credit">Developed by <a href="http://www.designtheway.com" target="_blank">Design the way</a></p>
